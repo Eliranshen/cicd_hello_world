@@ -2,8 +2,8 @@ name: cicd_practice
 on: [push]
 
 jobs:
- build:
-runs-on: ubuntu-latest
-steps:
-  - uses: actions/checkout@v1
-  - run: cat "hello_world.txt"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: cat "hello_world.txt"
